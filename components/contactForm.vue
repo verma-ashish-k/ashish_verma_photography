@@ -1,5 +1,5 @@
 <template>
-    <div class="flex min-h-screen justify-center items-center my-20">
+    <div id="contact" class="flex min-h-screen justify-center items-center my-10">
 
         <div class="container mx-auto my-4 px-4 lg:px-20">
             <form @submit.prevent="submitForm">

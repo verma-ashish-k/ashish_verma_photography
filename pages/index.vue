@@ -5,7 +5,7 @@
             <hero-header class="-mt-16 -z-10" />
             <section2 />
             <gallery />
-            <pricing-packages />
+            <videos />
             <contact-form />
         </div>
 

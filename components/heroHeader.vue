@@ -3,23 +3,21 @@
         <div class="hero min-h-screen mb-5">
 
             <!-- Hero Content -->
-            <div class="hero-content text-center text-base-100 mt-96">
+            <div class="hero-content flex-col text-center text-base-100 mt-96">
                 <div class="max-w-7xl">
                     <span
                         class="mb-5 text-7xl title font-extrabold bg-gradient-to-br from-orange-400 to-orange-700 text-transparent bg-clip-text"
                         :key="currentTitle">{{
                             currentTitle }}</span><br />
-                    <span class="mt-10 text-5xl font-bold">in {{ location }}</span>
-                    <p class="mb-5 mt-2 text-2xl">Ashish is an experienced and talented Photographer and provides his
-                        services
-                        in {{
-                            location }}
-                        and surrounding areas.</p>
-                    <div class="flex justify-center gap-5">
-                        <button class="btn btn-outline btn-accent w-1/4">View Portfolio</button>
-                        <button class="btn btn-outline btn-accent w-1/4">Book Now</button>
-                    </div>
 
+
+                </div>
+                <div class="flex justify-center gap-5">
+                    <a href="#" @click="scrollToPortfolio2"><button class="btn btn-outline btn-accent min-w-max w-1/2">View
+                            Portfolio</button></a>
+
+                    <a href="#" @click="scrollToContact2"><button class="btn btn-outline btn-accent min-w-max w-1/2">Book
+                            Now</button></a>
                 </div>
             </div>
 
@@ -30,7 +28,7 @@
             </video>
 
             <div class="animate-bounce absolute bottom-0">
-                <NuxtLink to="#sec-2" ref="nextSectionRef" @click="scrollToNextSection()">
+                <a href="#" @click="scrollToNextSection()">
                     <svg class="w-16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.40 614.40" xml:space="preserve"
                         fill="#000000" stroke="#000000" stroke-width="0.00512" transform="rotate(0)">
@@ -58,7 +56,7 @@
                         </g>
                     </svg>
 
-                </NuxtLink>
+                </a>
             </div>
         </div>
 
@@ -67,28 +65,32 @@
   
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-import { gsap } from 'gsap';
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-
-gsap.registerPlugin(ScrollToPlugin);
-//typing titles, updated as needed
-const titles = [
-    'Architectural Photography',
-    'Interior Photography',
-    'Exterior Photography',
-    'Twilight Photography',
-    'Aerial Photography',
-    'Property Photography',
-    'Real Estate Photography',
-    'Real Estate Videography',
-    'Real Estate Marketing',
-    'Virtual Tours',
-    'Professional Headshots',
-];
-
 
 const scrollToNextSection = () => {
-    gsap.to(window, { duration: 2, scrollTo: sec - 2 });
+    const nextSection = document.getElementById('sec-2');
+    if (nextSection) {
+        nextSection.scrollIntoView({
+            behavior: 'smooth',
+        });
+    }
+};
+
+const scrollToPortfolio2 = () => {
+    const portfolioSection = document.getElementById('portfolio');
+    if (portfolioSection) {
+        portfolioSection.scrollIntoView({
+            behavior: 'smooth',
+        });
+    }
+};
+
+const scrollToContact2 = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+        contactSection.scrollIntoView({
+            behavior: 'smooth',
+        });
+    }
 };
 
 const currentTitle = ref('');

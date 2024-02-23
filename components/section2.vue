@@ -27,7 +27,7 @@
                         <br />
                         <br />
                         Ashish has been a photographer for as long as he can remember, he started with a film camera and
-                        then moved to digital. His professional career started in 2018 when he started working for his own
+                        then moved to digital. His professional career started in 2016 when he started working for his own
                         company called The 3rd Eye Photography. He loves Architectural photography and has been doing it for
                         a while now. He also loves to do portraits and event photography.
                         <br />

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="real-estate">
+        <div id="portfolio">
             <h2 class="text-2xl font-bold text-gray-400 text-center my-10">Real Estate Photography</h2>
             <div class="grid justify-center grid-cols-2 md:grid-cols-3 gap-4">
                 <!-- Loop through the array of image URLs and create a div for each image -->
@@ -29,6 +29,15 @@
 
 
 const realEstateImageUrls = [
+    '/v1708666623/real_estate/ashish_verma_photography-96_uhwuis.jpg',
+    '/v1708666626/real_estate/ashish_verma_photography-98_qfmhma.jpg',
+    '/v1708666630/real_estate/ashish_verma_photography-101_nscqug.jpg',
+    '/v1708666662/real_estate/ashish_verma_photography-172_ycvwt5.jpg',
+    '/v1708666668/real_estate/ashish_verma_photography-192_qzldid.jpg',
+    '/v1708666678/real_estate/ashish_verma_photography-194_d2jqv0.jpg',
+    '/v1708666685/real_estate/ashish_verma_photography-202_bmdyh9.jpg',
+    '/v1708666689/real_estate/ashish_verma_photography-200_h293bl.jpg',
+    '/v1708666682/real_estate/ashish_verma_photography-196_hb9ewt.jpg',
     '/v1707352153/real_estate/T3E_6_of_25_-resized_t1lgkg.jpg',
     '/v1707352138/real_estate/T3E_2_of_25_-resized_aeidav.jpg',
     '/v1707342331/real_estate/T3E-10-resized_itqv8q.jpg',
@@ -47,6 +56,10 @@ const realEstateImageUrls = [
     '/v1707701802/real_estate/TFM_OB-3_akiyoo.jpg',
     '/v1707701795/real_estate/T3E-19_zzjc1a.jpg',
     '/v1707701802/real_estate/TFM_OB-3_akiyoo.jpg',
+    '/v1708666653/real_estate/ashish_verma_photography-132_twjz4k.jpg',
+    '/v1708666649/real_estate/ashish_verma_photography-131_lxgoqt.jpg',
+    '/v1708666694/real_estate/ashish_verma_photography-208_e8ohsv.jpg'
+
 ];
 
 const headshotImageUrls = [
